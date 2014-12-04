@@ -12,7 +12,7 @@ A MVC boilerplate for Node.js web applications using Hapi (tested with version 8
 
 **Handlebars.js** - [https://github.com/wycats/handlebars.js](https://github.com/wycats/handlebars.js/)
 
-### Usage:
+## Usage:
 
 Start the server on port 8080 by running the command:
 ```
@@ -24,7 +24,7 @@ If you want a list of the available commands
 $ node app/server.js --help
 ```
 
-#### License
+## License
 
 The MIT License (MIT)
 
