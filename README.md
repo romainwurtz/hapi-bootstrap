@@ -1,4 +1,4 @@
-Hapi Ninja
+Hapi Bootstrap
 ==========
 
 A MVC boilerplate for Node.js web applications using Hapi (tested with version 8.0.0-rc8), mongoose and Handlebars.js. 
