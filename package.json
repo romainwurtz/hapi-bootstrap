@@ -1,0 +1,31 @@
+{
+  "name": "hapi-bootstrap",
+  "version": "1.0.0",
+  "description": "A boilerplate for Node.js web applications using Hapi, mongoose and Handlebars.js",
+  "author": "Romain Wurtz",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/t3kila/hapi-bootstrap.git"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "node dist/server.js -p 8080"
+  },
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "commander": "^2.5.0",
+    "glob": "^4.3.1",
+    "grunt": "^0.4.5",
+    "handlebars": "^2.0.0",
+    "handlebars-helpers": "^0.5.8",
+    "hapi": "^8.0.0-rc8",
+    "joi": "^5.0.2",
+    "lodash": "^2.4.1",
+    "mongoose": "^3.9.5",
+    "require-directory": "^2.0.0"
+  },
+  "devDependencies": {}
+}
