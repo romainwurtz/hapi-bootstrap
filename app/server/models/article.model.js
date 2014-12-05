@@ -1,13 +1,9 @@
-/**
- * Module dependencies.
- */
+"use strict";
+
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema,
     chalk = require('chalk');
 
-/**
- * User Schema
- */
 var ArticleSchema = new Schema({
     title: {
         type: String,
@@ -15,7 +11,7 @@ var ArticleSchema = new Schema({
         trim: true,
         required: 'Title cannot be blank'
     },
-    content: {
+    body: {
         type: String,
         default: '',
         trim: true
@@ -29,9 +25,6 @@ var ArticleSchema = new Schema({
     }
 });
 
-/**
- * Hook a pre save method to hash the password
- */
 ArticleSchema.pre('save', function(next) {
     console.log(chalk.green("[NOTICE] Article saved"));
     next();

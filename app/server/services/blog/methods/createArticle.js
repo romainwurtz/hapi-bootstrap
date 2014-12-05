@@ -1,3 +1,5 @@
+"use strict";
+
 var mongoose = require('mongoose'),
     Article = mongoose.model('Article'),
     chalk = require('chalk');
@@ -7,7 +9,7 @@ module.exports = function createArticle(params, next) {
     var article = new Article();
 
     article.title = params.title;
-    article.content = params.content;
+    article.body = params.body;
 
     article.save(function(err) {
         if (err) {

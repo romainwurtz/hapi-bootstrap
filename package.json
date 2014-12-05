@@ -22,8 +22,8 @@
     "handlebars": "^2.0.0",
     "handlebars-helpers": "^0.5.8",
     "hapi": "^8.0.0-rc8",
+    "hoek": "^2.10.0",
     "joi": "^5.0.2",
-    "lodash": "^2.4.1",
     "mongoose": "^3.9.5",
     "require-directory": "^2.0.0"
   },

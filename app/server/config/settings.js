@@ -4,7 +4,6 @@
 
 var path = require('path'),
     program = require('commander'),
-    _ = require('lodash'),
     handlebars = require('handlebars'),
     helpers = require('handlebars-helpers');
 
@@ -16,16 +15,15 @@ var options = {
     db: {
         mongoUrl: ''
     },
-    server: {}
-};
-
-options.server.connections = {
-    port:  8080,
-    router: {
-        stripTrailingSlash: true
+    server: {
+        connections: {
+            port:  8080,
+            router: {
+                stripTrailingSlash: true
+            }
+        }
     }
 };
-
 
 options.server.views = {
     engines: {
@@ -33,9 +31,7 @@ options.server.views = {
     },
     path: options.rootPath + 'views/',
     helpersPath: options.rootPath + 'views/helpers',
-    layoutPath: options.rootPath + 'views/layouts',
     partialsPath: options.rootPath + 'views/partials',
-    layout: 'default',
     layoutKeyword: 'hapiContent',
     isCached: false
 };

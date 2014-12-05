@@ -11,6 +11,7 @@ var db = mongoose.connect(config.db.mongoUrl, function (err) {
     if (err) {
         console.error(chalk.red('[ERROR] Could not connect to MongoDB!'));
         console.log(chalk.red(err));
+        process.exit(1);
     }
 });
 

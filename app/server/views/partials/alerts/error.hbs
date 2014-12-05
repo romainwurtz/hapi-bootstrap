@@ -1,0 +1,10 @@
+{{#if action.errors}}
+    <div class="alert alert-danger" role="alert">
+        <strong>Oh snap!</strong> Please fix the following errors:
+        <ol class="errors">
+          {{#each action.errors}}
+              <li>{{message}}</li>
+          {{/each}}
+        </ol>
+    </div>
+{{/if}}
